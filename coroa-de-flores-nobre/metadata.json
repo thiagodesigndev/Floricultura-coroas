@@ -1,0 +1,6 @@
+{
+  "name": "Coroa de Flores Nobre",
+  "description": "Entrega de Coroa de Flores para Velório em até 1h em todo o Brasil. Atendimento 24h e frete grátis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

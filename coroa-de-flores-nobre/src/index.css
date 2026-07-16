@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Open Sans", sans-serif;
+  --font-sans: "Open Sans", sans-serif;
+  --font-montserrat: "Open Sans", sans-serif;
+  
+  --color-primary: #83B735;
+  --color-primary-dark: #3D6B35;
+  --color-primary-light: #91D15C;
+  --color-darkgreen: #1B2C02;
+  --color-gold: #C9A84C;
+  --color-dark: #3D3D3D;
+  --color-lightbg: #FAFAF7;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-lightbg);
+  color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: #3D3D3D;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animated marquee for top notifications */
+@keyframes scroll-marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: scroll-marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
